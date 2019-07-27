@@ -1,0 +1,44 @@
+{
+  "name": "orichalcum",
+  "version": "1.0.0",
+  "description": "e-commerce front end exercise.",
+  "main": "client/src/index.jsx",
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.19.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.4",
+    "webpack": "^4.38.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.6"
+  },
+  "scripts": {
+    "test": "test",
+    "build": "webpack -d --watch",
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/beverlyah/orichalcum.git"
+  },
+  "author": "beverly hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beverlyah/orichalcum/issues"
+  },
+  "homepage": "https://github.com/beverlyah/orichalcum#readme"
+}
