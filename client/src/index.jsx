@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import Overview from './overview/index.jsx'
 import RelatedItems from './related/index.jsx'
+import OverviewContainer from '../src/containers/OverviewContainer.jsx';
+import store from './store/store.js';
 
 class Orichalcum extends React.Component {
   constructor(props) {
@@ -15,11 +17,15 @@ class Orichalcum extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Overview info={this.state}/>
+        <OverviewContainer />
         <RelatedItems />
       </React.Fragment>
     )
   }
 }
 
-ReactDOM.render(<Orichalcum />, document.getElementById('orichalcum'))
+ReactDOM.render(
+  <Provider store={store}>
+    <Orichalcum />
+  </Provider>,
+  document.getElementById('orichalcum'))
