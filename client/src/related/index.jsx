@@ -8,7 +8,7 @@ class RelatedItems extends React.Component {
   render() {
     return(
       <React.Fragment>
-        </React.Fragment>
+      </React.Fragment>
     )
   }
   
