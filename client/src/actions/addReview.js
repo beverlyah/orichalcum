@@ -1,6 +1,5 @@
-
 var addReview = (text) => ({
-    type: ADD_REVIEW,
+    type: "ADD_REVIEW",
     payload: text  
   });
   
