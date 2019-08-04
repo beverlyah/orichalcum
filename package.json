@@ -29,8 +29,9 @@
   },
   "scripts": {
     "test": "test",
-    "build": "webpack -d --watch",
-    "start": "nodemon server/index.js"
+    "dev": "webpack -d --watch",
+    "start": "nodemon server/index.js",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
