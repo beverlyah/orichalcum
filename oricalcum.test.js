@@ -2,6 +2,7 @@ import puppeteer from 'puppeteer';
 import configureStore from 'redux-mock-store'
 import thunk from 'redux-thunk';
 import addReview from './client/src/actions/addReview.js';
+import addReviewReducer from './client/src/reducers/addReviewReducer.js';
 
 let page;
 let browser;
@@ -40,6 +41,13 @@ describe('redux', () => {
     });
 
   });
+  describe('reducers', () => {
+    it('should return the initial state', () => {
+      expect(addReviewReducer(undefined, {})).toEqual({});
+    });
+  
+    
+  })
 });
 
 // describe('end-to-end tests', () => {

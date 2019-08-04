@@ -1,4 +1,4 @@
-const addReview = (state, action) => {
+const addReviewReducer = (state={}, action) => {
 
     switch(action.type) {
         case 'ADD_REVIEW': {
