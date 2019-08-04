@@ -28,7 +28,6 @@
     "webpack-cli": "^3.3.6"
   },
   "scripts": {
-    "test": "test",
     "dev": "webpack -d --watch",
     "start": "nodemon server/index.js",
     "build": "webpack -p",
