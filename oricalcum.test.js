@@ -43,9 +43,28 @@ describe('redux', () => {
   });
   describe('reducers', () => {
     it('should return the initial state', () => {
-      expect(addReviewReducer(undefined, {})).toEqual({});
+      expect(addReviewReducer(undefined, {})).toEqual({reviews: ['Leave a review']});
     });
-  
+    it('should add a new review on initial state', () => {
+      const action = {
+        type: 'ADD_REVIEW',
+        payload: 'these jeans are boss'
+      }
+      expect(addReviewReducer(undefined, action)).toEqual({reviews: ['Leave a review', 'these jeans are boss']})
+    });
+    it('should add multiple reviews', () => {
+      const action1 = {
+        type: 'ADD_REVIEW',
+        payload: 'these jeans are boss'
+      }
+      const action2 = {
+        type: 'ADD_REVIEW',
+        payload: 'best jeans I ever had'
+      }
+      const state = {reviews: ['Leave a review']}
+      addReviewReducer(state, action1);
+      expect(addReviewReducer(state, action2)).toEqual({reviews: ['Leave a review', 'these jeans are boss', 'best jeans I ever had']})
+    });
     
   })
 });
