@@ -1,6 +1,4 @@
-const addReviewReducer = (state={
-    reviews: ['Leave a review']
-}, action) => {
+const addReviewReducer = (state=['Leave a review'], action) => {
 
     switch(action.type) {
         case 'ADD_REVIEW': {
