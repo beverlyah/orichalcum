@@ -1,9 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
-import Overview from './overview/index.jsx'
-import RelatedItems from './related/index.jsx'
 import OverviewContainer from '../src/containers/OverviewContainer.jsx';
+import ReviewsContainer from './containers/ReviewsContainer.jsx';
 import store from './store/store.js';
 
 class Orichalcum extends React.Component {
@@ -18,7 +17,7 @@ class Orichalcum extends React.Component {
     return (
       <React.Fragment>
         <OverviewContainer />
-        <RelatedItems />
+        <ReviewsContainer/>
       </React.Fragment>
     )
   }
