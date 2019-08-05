@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Overview from '../overview/index.jsx';
+import Overview from '../components/overview/index.jsx';
 
 
 
