@@ -1,8 +1,9 @@
-import addReviewReducer from './addReviewReducer.js';
+
 import { combineReducers } from 'redux'
+import IdReducer from './idReducer.js';
 
 const rootReducer = combineReducers({
-    reviews: addReviewReducer
+    productId: IdReducer
 });
 
 export default rootReducer;
