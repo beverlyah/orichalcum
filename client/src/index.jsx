@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
-import OverviewContainer from '../src/containers/OverviewContainer.jsx';
+import HeaderContainer from '../src/containers/HeaderContainer.jsx';
 import ReviewsContainer from './containers/ReviewsContainer.jsx';
 import store from './store/store.js';
 
@@ -16,8 +16,7 @@ class Orichalcum extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <OverviewContainer />
-        <ReviewsContainer/>
+        <HeaderContainer />
       </React.Fragment>
     )
   }

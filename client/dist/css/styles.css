@@ -1,0 +1,12 @@
+#bod {
+  margin: auto 50px;
+}
+
+#promotion {
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 10px 0px;
+  background-color: #f7f7f5;
+}
