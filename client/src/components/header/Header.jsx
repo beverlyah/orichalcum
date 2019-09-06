@@ -98,7 +98,7 @@ const Header = () => {
           </div>
         </Toolbar>
       </AppBar>
-      <div id='promotion'> SITE-WIDE ANNOUNCEMENT MESSAGE! - SALE / DISCOUNT OFFER - NEW PRODUCT HIGHLIGHT </div>
+      <div id='promotion'> SITE-WIDE ANNOUNCEMENT MESSAGE! - SALE / DISCOUNT <stong>OFFER</stong> - <u>NEW PRODUCT HIGHLIGHT</u> </div>
     </div>
   );
 }
