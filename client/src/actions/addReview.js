@@ -1,6 +1,6 @@
-var addReview = (text) => ({
+var addReview = (reviewInfo) => ({
     type: "ADD_REVIEW",
-    payload: text  
+    payload: reviewInfo 
   });
   
   export default addReview;

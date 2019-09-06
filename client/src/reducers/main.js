@@ -2,7 +2,7 @@ import addReviewReducer from './addReviewReducer.js';
 import { combineReducers } from 'redux'
 
 const rootReducer = combineReducers({
-    addReview: addReviewReducer
+    reviews: addReviewReducer
 });
 
 export default rootReducer;

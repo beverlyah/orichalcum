@@ -1,13 +1,17 @@
-const addReviewReducer = (state=['Leave a review'], action) => {
+const initialState = [
+    [
+        'newUser',
+        'leave a review'
+    ]
+  ];
+  
 
-    switch(action.type) {
-        case 'ADD_REVIEW': {
-            state.reviews.push(action.payload);
-            return state;
-        }   
-        default:
-            return state;
+const addReviewReducer = (state=initialState, action={}) => {
+
+    if ( action.type === 'ADD_REVIEW') {
+        return action.payload;
     }
+    return state;
 }
 
 export default addReviewReducer
