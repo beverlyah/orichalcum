@@ -8,6 +8,12 @@ import { fade, makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 
+// Change header color
+// make a shadow underneath header
+// make the header bigger
+// change the font of the text
+// add a shopping cart
+// change the emblem for the menu
 
 const useStyles = makeStyles(theme => ({
   root: {
