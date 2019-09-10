@@ -1,5 +1,9 @@
 #bod {
-  margin: auto 50px;
+  margin: auto 10px;
+}
+
+#thumbnail {
+  padding-left: 15px;
 }
 
 #promotion {
@@ -9,4 +13,16 @@
   letter-spacing: 2px;
   padding: 0px 0px;
   background-color: #f7f7f5;
+}
+
+.slide-arrow.right {
+  position: absolute;
+  top: 70%;
+  left: 10px;
+}
+
+.slide-arrow.left {
+  position: absolute;
+  top: 70%;
+  left: 10px;
 }

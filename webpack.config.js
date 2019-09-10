@@ -1,7 +1,7 @@
 
 var path = require('path');
-var SRC_DIR = path.join(__dirname, '/client/src');
-var DIST_DIR = path.join(__dirname, '/client/dist');
+var SRC_DIR = path.resolve(__dirname, '/client/src');
+var DIST_DIR = path.resolve(__dirname, '/client/dist');
 
 module.exports = {
   entry: `${SRC_DIR}/index.jsx`,
@@ -27,6 +27,7 @@ module.exports = {
       test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
       loader: 'url-loader',
       options: {
+        mimetype: 'image/png',
         limit: 10000
       }
     }

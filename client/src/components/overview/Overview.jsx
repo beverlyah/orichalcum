@@ -11,8 +11,9 @@ class Overview extends React.Component {
 
   render() {
 
+
     return (
-      <Carousel />
+      <Carousel images={this.props.styles.results} />
     );
   }
 }
