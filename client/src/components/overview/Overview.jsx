@@ -1,7 +1,6 @@
 import React from 'react';
 import Carousel from './Carousel.jsx';
-import axios from 'axios';
-import store from '../../store/store.js'
+
 class Overview extends React.Component {
 
   componentDidMount() {
@@ -11,8 +10,9 @@ class Overview extends React.Component {
 
   render() {
 
+
     return (
-      <Carousel />
+      <Carousel images={this.props.styles.results} />
     );
   }
 }
