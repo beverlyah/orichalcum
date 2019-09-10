@@ -1,3 +1,6 @@
+// research md in Grid
+// colums for the style
+
 import React, { useState, useEffect, Fragment } from 'react';
 // Material UI Components
 import { Grid, Typography } from '@material-ui/core';
