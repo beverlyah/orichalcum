@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
   },
   navbar: {
-    background: '#b58b0e',
+    background: 'black',
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -99,6 +99,13 @@ const Header = () => {
           </div>
         </Toolbar>
       </AppBar>
+      <div id='promotion'><Typography variant="overline" gutterBottom>
+        <em>SITE-WIDE ANNOUNCEMENT MESSAGE - SALE! DISCOUNT OFFER -{' '}</em>
+        <strong>30% off</strong> -{' '}
+        <Link href={'1'} color="inherit" underline="always">
+          Camo Onesie
+            </Link>
+      </Typography> </div>
     </div>
   );
 }
