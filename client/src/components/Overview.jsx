@@ -1,6 +1,5 @@
-import { connect } from 'react-redux'
 import React, { Component } from 'react'
-import store from '../store/store'
+import Carousel from './Carousel.jsx';
 
 class Overview extends Component {
   constructor(props) {
@@ -14,11 +13,19 @@ class Overview extends Component {
   render() {
 
     console.log('props in overview: ', this.props);
-
-
-
-    return <div>Hello World</div>
+    return <Carousel results={this.props.productStyles.results} index={0} />
   }
 }
 
 export default Overview
+
+
+/**
+ * <div>{
+      productStyles.results[0].photos.map((photo, i) => {
+        return (
+          <div key={i} style={`background-url: ${photo.url}`}></div>
+        )
+      })
+    }</div>
+ */
