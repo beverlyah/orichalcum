@@ -51,12 +51,21 @@ const useStyles = makeStyles(theme => ({
     zIndex: 1
   },
   thumbnails: {
-
+    width: '100%',
+    height: '55px'
+  },
+  thumbnailWindow: {
+    position: 'absolute',
+    width: '100px',
+    height: '330px',
+    overflow: 'hidden',
+    top: '25%',
+    left: '10%'
   },
 
   progress: {
     margin: theme.spacing(1),
-  },
+  }
 }));
 
 const Carousel = ({ results, index }) => {
@@ -97,15 +106,21 @@ const Carousel = ({ results, index }) => {
 
   return (
     <div className={classes.root}>
-      <div className={classes.thumbnails}>
-        {images ? (
-          images.map((image, i) => (
-            <Thumbnail key={i} thumbnail={image.thumbnail_url} />
-          ))
-        ) : (
-            <CircularProgress className={classes.progress} />
-          )}
+      <div className={classes.thumbnailWindow}>
+
+        <div className={classes.thumbnails}>
+          {images ? (
+            images.map((image, i) => (
+              <Thumbnail key={i} thumbnail={image.thumbnail_url} />
+            ))
+          ) : (
+              <CircularProgress className={classes.progress} />
+            )}
+        </div>
+
       </div>
+
+
 
       <div className={classes.carouselWindow} style={{ width: 750 }}>
 
