@@ -7,6 +7,7 @@ import NextArrow from '@material-ui/icons/ArrowForward';
 
 // React Components
 import Image from './Image.jsx';
+import Thumbnail from './Thumbnail.jsx';
 
 
 const useStyles = makeStyles(theme => ({
@@ -48,6 +49,9 @@ const useStyles = makeStyles(theme => ({
     top: '50%',
     right: 25,
     zIndex: 1
+  },
+  thumbnails: {
+
   },
 
   progress: {
@@ -93,8 +97,18 @@ const Carousel = ({ results, index }) => {
 
   return (
     <div className={classes.root}>
+      <div className={classes.thumbnails}>
+        {images ? (
+          images.map((image, i) => (
+            <Thumbnail key={i} thumbnail={image.thumbnail_url} />
+          ))
+        ) : (
+            <CircularProgress className={classes.progress} />
+          )}
+      </div>
 
       <div className={classes.carouselWindow} style={{ width: 750 }}>
+
         <IconButton
           className={classes.leftArrow}
           onClick={goToPreviousSlide}>
