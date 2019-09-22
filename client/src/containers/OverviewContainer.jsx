@@ -1,22 +1,20 @@
+import Overview from '../components/Overview.jsx';
 import { connect } from 'react-redux';
-import Overview from '../components/overview/Overview.jsx';
-import * as actions from '../actions';
+import { getProduct, getProductStyles } from '../actions/index.js';
 
-// the container prop is the prop that the component is 
-// going to be looking for.
+const mapStateToProps = state => ({
+  productId: state.productId,
+  productInfo: state.productInfo,
+  productStyles: state.productStyles
+})
 
-// the store property listed below comes from the main root reducer property name
+const mapDispatchToProps = dispatch => ({
+  products: productId => {
+    dispatch(getProduct(productId))
+    dispatch(getProductStyles(productId));
+  }
+})
 
-const mapStateToProps = store => ({
-  id: store.productId,
-  product: store.product,
-  styles: store.styles,
-});
+const OverviewContainer = connect(mapStateToProps, mapDispatchToProps)(Overview);
 
-const OverviewContainer = connect(
-  mapStateToProps,
-  actions
-)(Overview);
-
-export default OverviewContainer;
-
+export default OverviewContainer
