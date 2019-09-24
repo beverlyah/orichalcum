@@ -58,11 +58,11 @@ const useStyles = makeStyles(theme => ({
   },
   thumbnailWindow: {
     position: 'absolute',
-    width: '100px',
+    width: '85px',
     height: '330px',
     overflow: 'hidden',
     top: '25%',
-    left: '10%'
+    left: '4%'
   },
   thumbnailWrapper: {
 
@@ -70,12 +70,12 @@ const useStyles = makeStyles(theme => ({
   upArrow: {
     position: 'relative',
     top: '40px',
-    left: '115%'
+    left: '25%'
   },
   downArrow: {
     position: 'relative',
     top: '425px',
-    left: '65%'
+    left: '-25%'
   },
   progress: {
     margin: theme.spacing(1),

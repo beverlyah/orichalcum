@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import Carousel from './Carousel.jsx';
+import { Grid } from '@material-ui/core'
 
 class Overview extends Component {
   constructor(props) {
@@ -13,7 +14,36 @@ class Overview extends Component {
   render() {
 
     console.log('props in overview: ', this.props);
-    return <Carousel results={this.props.productStyles.results} index={0} />
+    return <Fragment>
+      <Grid container spacing={0}>
+        <Grid item xs={8}>
+          <Carousel results={this.props.productStyles.results} index={0} />
+        </Grid>
+        <Grid item xs={4} >
+          <div>
+            <span>
+              Stars
+            </span>
+            <span>
+              Reviews
+            </span>
+          </div>
+          <div>Product type</div>
+          <div>Product Title/Name</div>
+          <div>Price</div>
+          <div>Style - Title</div>
+          <div>List of wrapped style circles</div>
+          <div>
+            <span>Inline size - Drop down list </span> <span>Quanity - Drop Down list</span>
+          </div>
+          <div>
+            <span>Add to cart button </span> <span>Share button</span>
+          </div>
+        </Grid>
+
+      </Grid>
+
+    </Fragment >
   }
 }
 

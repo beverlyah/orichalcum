@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import HeaderContainer from '../src/containers/HeaderContainer.jsx';
 import OverviewContainer from '../src/containers/OverviewContainer.jsx';
 
+
 import store from './store/store.js';
 
 class Orichalcum extends React.Component {
