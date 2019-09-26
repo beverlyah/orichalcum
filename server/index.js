@@ -9,7 +9,7 @@ app.use(parser.json())
 
 app.use(express.static(__dirname + '/../client/dist'))
 
-let PORT = process.env.PORT || 3000
+let PORT = process.env.PORT || 3001
 
 app.listen(PORT, (err) => {
   if (err) {

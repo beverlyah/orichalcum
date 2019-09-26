@@ -12,9 +12,11 @@ import SearchIcon from '@material-ui/icons/Search';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+
   },
   navbar: {
     background: 'black',
+    boxShadow: '0px 10px 2px 0px rgba(0,0,0,0.5)'
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -51,6 +53,15 @@ const useStyles = makeStyles(theme => ({
   },
   inputRoot: {
     color: 'inherit',
+  },
+  promo: {
+    fontStyle: 'italic',
+    fontSize: '12px',
+    textAlign: 'center',
+    letterSpacing: '2px',
+    padding: '0px 0px',
+    backgroundColor: '#f7f7f5',
+    marginTop: '17px'
   },
   inputInput: {
     padding: theme.spacing(1, 1, 1, 7),
@@ -99,7 +110,7 @@ const Header = () => {
           </div>
         </Toolbar>
       </AppBar>
-      <div id='promotion'><Typography variant="overline" gutterBottom>
+      <div className={classes.promo}><Typography variant="overline" gutterBottom>
         <em>SITE-WIDE ANNOUNCEMENT MESSAGE - SALE! DISCOUNT OFFER -{' '}</em>
         <strong>30% off</strong> -{' '}
         <Link href={'1'} color="inherit" underline="always">
