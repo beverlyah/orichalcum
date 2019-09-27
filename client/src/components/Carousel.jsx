@@ -61,20 +61,19 @@ const useStyles = makeStyles(theme => ({
     width: '85px',
     height: '330px',
     overflow: 'hidden',
-    top: '25%',
-    left: '4%'
+    top: '25%'
   },
   thumbnailWrapper: {
 
   },
   upArrow: {
     position: 'relative',
-    top: '40px',
+    top: '15px',
     left: '25%'
   },
   downArrow: {
     position: 'relative',
-    top: '425px',
+    top: '390px',
     left: '-25%'
   },
   progress: {

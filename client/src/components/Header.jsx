@@ -16,7 +16,8 @@ const useStyles = makeStyles(theme => ({
   },
   navbar: {
     background: 'black',
-    boxShadow: '0px 10px 2px 0px rgba(0,0,0,0.5)'
+    boxShadow: '0px 10px 2px 0px rgba(0,0,0,0.5)',
+    borderRadius: '6px'
   },
   menuButton: {
     marginRight: theme.spacing(2),

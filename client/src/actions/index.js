@@ -10,6 +10,7 @@ export const getProduct = productId => {
 
   return async dispatch => {
     const res = await axios.get(`http://18.217.220.129/products/${productId}`);
+    console.log('res.data: ', res.data);
     dispatch(changeProduct(productId));
     dispatch(productInfo(res.data));
 
